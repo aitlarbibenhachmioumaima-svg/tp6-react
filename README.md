@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# TP 6 : Découverte des Hooks Avancés et des Hooks Personnalisés
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Description
 
-## Available Scripts
+Ce projet est un TP réalisé dans le cadre de l’apprentissage de React.
+Il permet de pratiquer les Hooks essentiels de React avec des exemples simples et clairs.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Objectifs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Comprendre et utiliser **useReducer**
+* Manipuler le DOM avec **useRef**
+* Utiliser **useEffect** avec nettoyage
+* Créer un Hook personnalisé (**useFetch**)
+* Afficher des données provenant d’une API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Technologies utilisées
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React JS
+* JavaScript (ES6)
+* HTML / CSS
+* API publique (JSONPlaceholder)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Structure du projet
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="206" height="389" alt="image" src="https://github.com/user-attachments/assets/b15ddf20-5d0e-4c02-94ea-8ff3c20f6b67" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Installation et exécution
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Lancer l’application :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="1919" height="1005" alt="Capture d&#39;écran 2026-03-23 124310" src="https://github.com/user-attachments/assets/a9facaef-5747-47c4-8808-d0a887470514" />
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧪 Fonctionnalités
 
-### Code Splitting
+<img width="1296" height="949" alt="Capture d&#39;écran 2026-03-23 150418" src="https://github.com/user-attachments/assets/4745b30c-d707-426a-820c-341108e0980e" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### 🔢 Compteur (useReducer)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img width="986" height="427" alt="Capture d&#39;écran 2026-03-23 150125" src="https://github.com/user-attachments/assets/d49f42c0-a6cc-4dbb-baaf-d5da5700f14b" />
 
-### Making a Progressive Web App
+<img width="983" height="425" alt="Capture d&#39;écran 2026-03-23 150144" src="https://github.com/user-attachments/assets/b38205b4-46b5-447a-9d30-e14f1a0a4d00" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<img width="1051" height="432" alt="Capture d&#39;écran 2026-03-23 150206" src="https://github.com/user-attachments/assets/8e11f2af-3eb4-4026-8402-1532b146adbf" />
 
-### Advanced Configuration
+Permet d’incrémenter, décrémenter et réinitialiser une valeur.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🎯 Focus Input (useRef)
 
-### Deployment
+<img width="547" height="161" alt="Capture d&#39;écran 2026-03-23 150237" src="https://github.com/user-attachments/assets/92684190-d01a-41f2-a564-869b07e5e259" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Permet de placer le curseur automatiquement dans un champ texte.
 
-### `npm run build` fails to minify
+### 🔄 Compteur de rendus
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1919" height="953" alt="Capture d&#39;écran 2026-03-23 150326" src="https://github.com/user-attachments/assets/a3537d6c-43da-4d45-b367-cddb1ee70bff" />
+
+
+Affiche le nombre de fois que le composant est rendu (console).
+
+### 🌐 Récupération API (useFetch)
+
+<img width="994" height="430" alt="Capture d&#39;écran 2026-03-23 150341" src="https://github.com/user-attachments/assets/f8e2ea19-80aa-4f9d-b6dd-e2721ca120db" />
+
+
+Affiche une liste d’articles depuis une API externe.
+
+### ⏱️ Timer
+
+<img width="568" height="201" alt="Capture d&#39;écran 2026-03-23 150350" src="https://github.com/user-attachments/assets/9e60f878-d80f-4ca0-a07c-6ef63061f4b7" />
+
+
+Affiche le temps écoulé en secondes avec nettoyage automatique.
+
+---
+
+## 📸 Résultats attendus
+
+* Interface affichant tous les composants
+* Liste d’articles récupérée depuis l’API
+* Timer fonctionnel
+* Console affichant les rendus
+
+---
+
+## 📚 Conclusion
+
+Ce TP m’a permis de mieux comprendre :
+
+* La gestion de l’état avec useReducer
+* L’utilisation des références avec useRef
+* Le cycle de vie avec useEffect
+* La création de Hooks personnalisés
+
+---
+
