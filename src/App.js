@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Compteur from "./Compteur";
+import FocusInput from "./FocusInput";
+import CompteurRendu from "./CompteurRendu";
+import ListeArticles from "./ListeArticles";
+import Timer from "./Timer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: "20px" }}>
+      <h1>TP React Hooks (Version Personnalisée)</h1>
+
+      <section>
+        <h2>useReducer</h2>
+        <Compteur />
+      </section>
+
+      <section>
+        <h2>useRef (Focus)</h2>
+        <FocusInput />
+      </section>
+
+      <section>
+        <h2>Nombre de rendus</h2>
+        <CompteurRendu />
+      </section>
+
+      <section>
+        <h2>Récupération API</h2>
+        <ListeArticles />
+      </section>
+
+      <section>
+        <h2>Timer</h2>
+        <Timer />
+      </section>
     </div>
   );
 }
